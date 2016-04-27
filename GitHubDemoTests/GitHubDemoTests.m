@@ -24,9 +24,12 @@
     [super tearDown];
 }
 
-- (void)testExample {
+- (void)testMine {
     // This is an example of a functional test case.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
+    NSArray *arr = [NSArray new];
+    XCTAssertNotNil(arr,@"arr should not be nil");
+    XCTAssertTrue(arr.count==1,@"arr is an empty array");
 }
 
 - (void)testPerformanceExample {
